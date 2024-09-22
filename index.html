@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="https://fav.farm/👓" />
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="video">
+        <video src="./assets/652333414.mp4" id="myVid" style="width: 640px; height: 360px;"></video>
+        <input type="range" id="hProgress" min="0" max="100" value="0">
+        <div class="controls">
+            <input type="range", id="progress" min="0", max="100" value="0">
+            <div class="lowerHalf">
+                <div class="playPause">
+                    <img src="assets/backward-skip.svg" class="backward-skip">
+                    <div class="playToggle">
+                        <img src="assets/play.svg" alt="1" class="play">
+                        <img src="assets/pause.svg" alt="2" class="pause">
+                    </div>
+                    <img src="assets/forward-skip.svg" class="forward-skip">
+                </div>
+                <div class="otherSettings">
+                    <img src="assets/settings.svg" class="settings">
+                    <div class="volumePart">
+                        <img src="assets/volume.svg" class="volume">
+                        <img src="assets/mute.svg" class="mute">
+                        <input type="range" id="volumeControl" min="0", max="1", step=".1", value="1">
+                    </div>
+                    <div class="vidSizing">
+                        <img src="assets/miniscreen.svg" id="miniscreen">
+                        <img src="assets/fullscreen.svg" id="fullscreen">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
