@@ -44,8 +44,8 @@ video.addEventListener('timeupdate', () => {
     const progress = (video.currentTime / video.duration) * 100;
     progressBar.value = progress;
     const value = (progressBar.value - progressBar.min) / (progressBar.max - progressBar.min) * 100;
-    progressBar.style.background = 'linear-gradient(to right, #fdba00 0%, #fdba00 ' + value + '%, #d3d3d3 ' + value + '%, #d3d3d3 100%)';
-    hprogressBar.style.background = 'linear-gradient(to right, #fdba00 0%, #fdba00 ' + value + '%, #d3d3d3 ' + value + '%, #d3d3d3 100%)';
+    progressBar.style.background = 'linear-gradient(to right, white 0%, white ' + value + '%, #d3d3d3 ' + value + '%, #d3d3d3 100%)';
+    hprogressBar.style.background = 'linear-gradient(to right, #FFBE33 0%, #FFBE33 ' + value + '%, #d3d3d3 ' + value + '%, #d3d3d3 100%)';
 });
 
 forward.addEventListener('click', () => {
@@ -61,7 +61,7 @@ video.addEventListener('ended', () => {
     btn.innerHTML = `<p>Play</p>`;
     progressBar.value = 0;
     const value = (progressBar.value - progressBar.min) / (progressBar.max - progressBar.min) * 100;
-    progressBar.style.background = 'linear-gradient(to right, #fdba00 0%, #fdba00 ' + value + '%, #d3d3d3 ' + value + '%, #d3d3d3 100%)';
+    progressBar.style.background = 'linear-gradient(to right, white 0%, white ' + value + '%, #d3d3d3 ' + value + '%, #d3d3d3 100%)';
 })
 
 progressBar.addEventListener('input', () => {

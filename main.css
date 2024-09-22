@@ -57,7 +57,7 @@ p {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: rgb(253, 186, 0);
+    background-color: white;
     cursor: pointer;
 }
 
@@ -65,7 +65,7 @@ p {
     width: 20px;
     height: 20px;
     border-radius: 50%;    
-    background-color: #fdba00;
+    background-color: white;
     cursor: pointer;
 }
 
@@ -127,7 +127,7 @@ p {
     height: 5px;
     appearance: none;
     margin: 0;
-    background-color: #d3d3d3;
+    background-color: black;
 }
 
 #hProgress::-webkit-slider-thumb {
@@ -159,14 +159,6 @@ p {
 .volumePart:hover #volumeControl {
     display: flex;
 }
-
-/* #volumeControl::-webkit-slider-thumb {
-    display: none;
-}
-
-#volumeControl::-moz-range-thumb {
-    display: none;
-} */
 
 .play, .mute, .pause, #fullscreen, #miniscreen, .forward-skip, .backward-skip, .settings, .volume {
     cursor: pointer;
